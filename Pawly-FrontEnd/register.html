@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/assert/css/register.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section class="login">
+      <div class="container">
+        <div class="row justify-content-between align-items-center" style="height: 100vh;">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+               <div class="logo-img-content" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <img src="./assert/image/logo(2).png" alt="">
+               </div> 
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="login-content" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                    <p class="heading">Xoş gəlmisiniz!</p>
+                    <form id="register-form">
+                        <div>
+                            <label for="name">Istifadəçi adınız</label>
+                            <input type="text" id="username" placeholder="adınız" required>
+                        </div>
+                        <!-- <div>
+                            <label for="poct">Poçt ünvanınız</label>
+                            <input type="email" id="poct" placeholder="pawly@gmail.com" required>
+                        </div> -->
+                        <div>
+                            <label for="password">Şifrəniz</label>
+                            <input type="password" id="password" placeholder="***********" required>
+                        </div>
+                        <div><button type="submit">Hesab yarat</button></div>
+                    </form>
+                    <p class="account">Hesabın var? <a href="login.html">Giriş et</a></p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      document.getElementById('register-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          const username = document.getElementById('username').value;
+          // const email = document.getElementById('poct').value;
+          const password = document.getElementById('password').value;
+
+          // Prepare the data for the POST request
+          const data = {
+              username: username,
+              password: password
+          };
+
+          fetch('https://a04f6f43-9afc-4d7a-bd7d-5b9053201e93-00-1xoi2hq8plfjo.sisko.replit.dev/api/register/', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+          })
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('Network response was not ok');
+              }
+              return response.json();
+          })
+          .then(data => {
+              if (data.username) {
+                  // Redirect to login page if registration is successful
+                  window.location.href = 'login.html';
+              } else {
+                  alert('Registration failed');
+              }
+          })
+          .catch(error => console.error('Error:', error));
+      });
+    </script>
+</body>
+</html>

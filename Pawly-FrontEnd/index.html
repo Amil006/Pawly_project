@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPage</title>
+    <link rel="stylesheet" href="assert/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+   <header>
+    
+        <div class="container">
+            <nav>
+            <div class="logo"><img src="./assert/image/logo.png" alt=""></div>
+            <ul class="nav-list">
+                <li><a href="./siginacaq.html">Sığınacaqlar</a></li>
+                <li><a href="">Sahibləndirilənlər</a></li>
+                <li><a href="./baytar.html">Baytarlar</a></li>
+                <li><a href="./baxici.html">Baxıcılar</a></li>
+                <li><a href="">Yeniliklər</a></li>
+                <li><a href="./story.html">Hekayələr</a></li>
+                <li><a href="./about.html">Haqqımızda</a></li>
+            </ul>
+            <div class="registration">
+                <!-- <div class="login-btn">
+                    <span class="heart-icon"><a href=""><i class="fa-regular fa-heart"></i></a></span>
+                    <a class="logIn" href="./login.html">Giris</a>
+                    <a class="regis" href="./register.html">Qeydiyyat</a>
+                </div> -->
+                <span><i class="fa-regular fa-user"></i>John</span>
+            </div>
+        </nav>
+        </div>
+    
+   </header>
+   <main>
+    <section class="intro-section">
+        <div class="container">
+           <div class="intro-box">
+       <div>
+        <div class="about-header">
+            <h1>Ən yaxşı dostunuzu tapın</h1>
+            <p>500-dən çox sığınacaq şəbəkəmizdən ev heyvanlarına baxın.</p>
+        </div>
+        <div class="search-input">
+            <input type="search" placeholder="Axtar">
+            <input type="search" placeholder="Məkan">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        
+       </div>
+       <div class="about-info">
+        <div class="about-info-card">
+           <a href="./siginacaq.html"> <img src="./assert/image/pet.png" alt=""></a>
+            <a style="color: black;" href="./siginacaq.html"><p>Sığınacaqlar</p></a>
+        </div>
+        <div class="about-info-card">
+           <a href="./animal.html"> <img src="./assert/image/pet.png" alt=""></a>
+           <a style="color: black;" href="./animal.html"> <p>Heyvanlar</p></a>
+        </div>
+        <div class="about-info-card">
+            <a href="./baytar.html"><img src="./assert/image/pet.png" alt=""></a>
+            <a style="color: black;" href="./baytar.html"><p>Baytarlar</p></a>
+        </div>
+        <div class="about-info-card">
+           <a href="./baxici.html"> <img src="./assert/image/pet.png" alt=""></a>
+          <a style="color: black;" href="./baxici.html">  <p>Baxıcılar</p></a>
+        </div>
+    </div>
+           </div>
+        </div>
+       </section>
+<section class="nest">
+    <div class="container">
+        <h2>Sığınacaqlar</h2>
+        <div class="row" id="shelter-list">
+            <!-- Dynamic content will be injected here -->
+        </div>
+    </div>
+</section>
+<section class="animals">
+    <div class="container">
+        <h2>Heyvan sahiblənmək istəyirsən?</h2>
+        <div class="row" id="animal-list">
+            
+    </div>
+</section>
+<section class="caregiver" >
+    <div class="container">
+        <h2>Baxıcılar</h2>
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="caregiver-box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                   <div>
+                    <!-- !-- <span class="heart-icon"><a href=""><i class="fa-regular fa-heart"></i></a></span> --> 
+                    <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+                    <img src="./assert/image/image 6.png" alt="">
+                    <p>Elmir Kamal</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="caregiver-box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div>
+                        <!-- !-- <span class="heart-icon"><a href=""><i class="fa-regular fa-heart"></i></a></span> -->
+                        <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+                    <img src="./assert/image/Frame 24(1).png" alt="">
+                    <p>İt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="caregiver-box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div>
+                        <!-- !-- <span class="heart-icon"><a href=""><i class="fa-regular fa-heart"></i></a></span> --> 
+                        <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+                    <img src="./assert/image/Rectangle 3(3).png" alt="">
+                    <p>Tutuquşu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                <div class="caregiver-box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <div>
+                        <a href="./baxici.html">     <span class="heart-icon"><i class="fa-regular fa-heart"></i></span></a> 
+                   <a href="./baxici.html"> <img src="./assert/image/pet2color" alt=""></a>
+                   <a href="./baxici.html"> <div><p>Daha çox baxıcı </p><p>kəşf et</p></div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fairtayle">
+    <div class="container">
+        <div class="row justify-content-between">
+            <h3>Onlardan hekayələr</h3>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="fairtayle-box" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1000">
+                   <div>
+                    <img src="./assert/image/Frame 33.png" alt="">
+                    <span class="heart-icon"><a href=""><i class="fa-regular fa-heart"></i></a></span>
+                   </div>
+                   <h5>Məstanın bir günü</h5>
+                   <p>Mənim adım Məstandır. Mənim sahibim məni çox sevir. A yeri gəlmişkən onun adı...</p>
+                   <a style="color: black;" href="./animal.html"><button>Davamını oxu</button></a>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                <div class="fairtayle-box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                   <div>
+                    <img src="./assert/image/image 6(1).png" alt="">
+                    <span class="heart-icon"><a href=""><i class="fa-regular fa-heart"></i></a></span>
+                   </div>
+                   <h5>Lusinin bir günü</h5>
+                   <p>Mənim adım Toplandır. Sahibim mənə yeni, yaşıl top alıb. Mən onu cox ...</p>
+                   <button><a style="color: black;" href="./animal.html">Davamını oxu</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="doctors ">
+    <div class="container   ">
+         <div class="row ">
+                    <h3>7/24 baytar xidməti</h3>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="doctor-box " data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                            <!-- "> -->
+                           
+                            <img src="./assert/image/image 6(2).png" alt="">
+                <p>Dr. Elmir Kamal</p>
+                           <button>Əlaqə saxla</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="doctor-box " data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                     
+                        
+                            <img src="./assert/image/Frame 33(1).png" alt="">
+                        <p>Dr. Murad Dadaş</p>
+                           <button>Əlaqə saxla</button>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 ">
+                        <div class="doctor-box " data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                        
+                            <img src="./assert/image/Frame 33(2).png" alt="">
+                    <p>Dr. Kəmalə Salmanova</p>
+                           <button>Əlaqə saxla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               
+            </div>
+        
+       
+        
+</section>
+
+   </main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                <div class="logo-foot">
+                    <img src="./assert/image/logo.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-xs-12">
+               <ul class="foot-list">
+                <li><a href="./siginacaq.html">Sığınacaqlar</a></li>
+                <li><a href="./animal.html">Heyvanlar</a></li>
+                <li><a href="./baytar.html">Baytarlar</a></li>
+                <li><a href="./baytar.html">Baxıcılar</a></li>
+               </ul>
+            </div>
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-xs-12">
+                <ul class="foot-list">
+                 <li><a href="">Yeniliklər</a></li>
+                 <li><a href="">Hekayələr</a></li>
+                 <li><a href="">Haqqımızda</a></li>
+                
+                </ul>
+             </div>
+             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+               <div class="btn-group">
+                <button type="submit"><a href="./login.html">Giris</a></button>
+                <button type="submit"><a href="./register.html">Qeydiyyat</a></button>
+               </div>
+               <div class="lovely">
+                <p><a href="./sevimli.html">Sevimlilər</a></p>
+               </div>
+             </div>
+        </div>
+       <div class="foot-end">
+ 
+    <div class="row justify-content-between align-items-center ">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs12">
+                <p >@2024 Pawly.co All trademarks are owned by Turing Academy.</p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs12">
+               <ul>
+                <li class="fb"><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="ins"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li class="twit"><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="youtube"><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+               </ul>
+            </div>
+        </div>
+       </div>
+    </div>
+</footer>
+  
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init();
+   </script>
+<script src="./assert/js/script.js"></script>
+<script>
+
+const images = [
+    './assert/image/Rectangle 3.png', // Image for first shelter
+    './assert/image/Rectangle 3(4).png', // Image for second shelter
+    './assert/image/Frame 24.png'      // Image for third shelter
+];
+
+    fetch('https://a04f6f43-9afc-4d7a-bd7d-5b9053201e93-00-1xoi2hq8plfjo.sisko.replit.dev/api/shelters/?format=json')
+        .then(response => response.json())
+        .then(data => {
+            const shelterList = document.getElementById('shelter-list');
+            shelterList.innerHTML = ''; // Clear existing content
+
+            data.forEach((shelter, index) => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12';
+
+            const nestBox = document.createElement('div');
+            nestBox.className = 'nest-box';
+            // nestBox.setAttribute('data-aos', 'fade-up');
+            // nestBox.setAttribute('data-aos-delay', '500');
+            // nestBox.setAttribute('data-aos-duration', '1000');
+
+            const heartIcon = document.createElement('span');
+            heartIcon.className = 'heart-icon';
+            heartIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
+
+            const img = document.createElement('img');
+            img.src = images[index % images.length]; // Cycle through images
+            img.alt = shelter.name;
+
+            const p = document.createElement('p');
+            p.innerText = shelter.name;
+
+            nestBox.appendChild(heartIcon);
+            nestBox.appendChild(img);
+            nestBox.appendChild(p);
+            colDiv.appendChild(nestBox);
+            shelterList.appendChild(colDiv);
+        });
+
+        // Add "More shelters" section
+        const moreColDiv = document.createElement('div');
+        moreColDiv.className = 'col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12';
+        const moreNestBox = document.createElement('div');
+        moreNestBox.className = 'nest-box';
+        // moreNestBox.setAttribute('data-aos', 'fade-left');
+        // moreNestBox.setAttribute('data-aos-delay', '500');
+        // moreNestBox.setAttribute('data-aos-duration', '1000');
+
+        moreNestBox.innerHTML = `
+            <a href="./siginacaq.html">
+                <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+            </a>
+            <a href="./siginacaq.html">
+                <img src="./assert/image/pet2color" alt="">
+            </a>
+            <a href="./siginacaq.html">
+                <div>
+                    <p>Daha çox sığınacaq </p>
+                    <p>kəşf et</p>
+                </div>
+            </a>
+        `;
+
+        moreColDiv.appendChild(moreNestBox);
+        shelterList.appendChild(moreColDiv);
+    })
+    .catch(error => console.error('Error fetching data:', error));  
+</script>
+
+<script>
+    fetch('https://a04f6f43-9afc-4d7a-bd7d-5b9053201e93-00-1xoi2hq8plfjo.sisko.replit.dev/api/animals/?format=json')
+    .then(response => response.json())
+    .then(data => {
+        const animalList = document.getElementById('animal-list')
+        animalList.innerHTML = ''; // Clear existing content
+
+        data.forEach((animal, index) => {
+            const colDiv = document.createElement('div');
+            colDiv.className = 'col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12';
+
+            const animalBox = document.createElement('div');
+            animalBox.className = 'animal-box';
+            // animalBox.setAttribute('data-aos', index % 2 === 0 ? 'flip-right' : 'slide-up');
+            // animalBox.setAttribute('data-aos-delay', '500');
+            // animalBox.setAttribute('data-aos-duration', '1000');
+
+            const heartIcon = document.createElement('span');
+            heartIcon.className = 'heart-icon';
+            heartIcon.innerHTML = '<i class="fa-regular fa-heart"></i>';
+
+            const img = document.createElement('img');
+            img.src = animal.photos[0].image; // Get the first image
+            img.alt = animal.name;
+
+            const p = document.createElement('p');
+            p.innerText = animal.species; // Display species
+
+            animalBox.appendChild(heartIcon);
+            animalBox.appendChild(img);
+            animalBox.appendChild(p);
+            colDiv.appendChild(animalBox);
+            animalList.appendChild(colDiv);
+        });
+
+        // Add "More animals" section
+        const moreColDiv = document.createElement('div');
+        moreColDiv.className = 'col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12';
+        const moreAnimalBox = document.createElement('div');
+        moreAnimalBox.className = 'animal-box';
+        // moreAnimalBox.setAttribute('data-aos', 'flip-left');
+        // moreAnimalBox.setAttribute('data-aos-delay', '500');
+        // moreAnimalBox.setAttribute('data-aos-duration', '1000');
+
+        moreAnimalBox.innerHTML = `
+            <a href="./animal.html">
+                <span class="heart-icon"><i class="fa-regular fa-heart"></i></span>
+            </a>
+            <a href="./animal.html">
+                <img src="./assert/image/pet2color" alt="">
+            </a>
+            <a href="./animal.html">
+                <div>
+                    <p>Daha çox heyvan </p>
+                    <p>kəşf et</p>
+                </div>
+            </a>
+        `;
+
+        moreColDiv.appendChild(moreAnimalBox);
+        animalList.appendChild(moreColDiv);
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
+</script>
+
+</body>
+</html>

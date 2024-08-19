@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/assert/css/login.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <section class="login">
+      <div class="container">
+        <div class="row justify-content-between align-items-center" style="height: 100vh;">
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="login-content" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                    <p class="heading">Buyurun!</p>
+                    <form id="login-form">
+                        <!-- <div>
+                            <label for="poct">Poçt ünvanınız</label>
+                            <input type="email" id="poct" placeholder="pawly@gmail.com" required>
+                        </div> -->
+                        <div>
+                          <label for="username">Poçt ünvanınız</label>
+                          <input type="text" id="username" placeholder="pawly@gmail.com" required>
+                      </div>
+                        <div>
+                            <label for="password">Şifrəniz</label>
+                            <input type="password" id="password" placeholder="***********" required>
+                        </div>
+                        <div><button type="submit">Giriş et</button></div>
+                    </form>
+                    <p class="account">Hesabın yoxdur? <a href="register.html">Hesab yarat</a></p>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="logo-img-content" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                    <img src="./assert/image/logo(2).png" alt="">
+                </div> 
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      document.getElementById('login-form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the default form submission
+
+          const username = document.getElementById('username').value;
+          const password = document.getElementById('password').value;
+
+          // Prepare the data for the POST request
+          const data = {
+              username: username,
+              password: password
+          };
+
+          fetch('https://a04f6f43-9afc-4d7a-bd7d-5b9053201e93-00-1xoi2hq8plfjo.sisko.replit.dev/api/login/', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify(data)
+          })
+          .then(response => {
+              if (!response.ok) {
+                  return response.json().then(errorData => {
+                      if (errorData.non_field_errors) {
+                          alert("Xəta: tapılmadı");
+                          window.location.href = 'register.html';
+                      }
+                  });
+              }
+              return response.json();
+          })
+          .then(data => {
+              if (data.access && data.refresh) {
+                  // Redirect to index.html if tokens are received
+                  window.location.href = 'index.html';
+              }
+          })
+          .catch(error => console.error('Error:', error));
+      });
+    </script>
+</body>
+</html>

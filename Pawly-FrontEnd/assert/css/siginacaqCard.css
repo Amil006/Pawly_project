@@ -1,0 +1,277 @@
+@import url(../css/reset.css);
+@import url(../css/layout.css);
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+body{
+    font-family: "DM Sans", sans-serif;
+}
+nav{
+    display: flex;
+    height: 96px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+.nav-list{
+    display: flex;
+}
+nav ul li a{
+    font-family: "DM Sans", sans-serif;
+    color: black;
+}
+
+.login-btn button{
+    margin: 0 10px; 
+    padding:10px 20px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    transition: all .5s;
+ }
+ .login-btn .regis a{
+     color: white;
+ }
+ .login-btn .logIn a{
+     color:#C06734 ;
+ }
+ .login-btn .logIn{
+     background-color: white;
+     border:1px solid #C06734;
+ }
+ .login-btn .regis{
+     background-color: #C06734;
+     /* border:1px solid #C06734; */
+ }
+
+ .login-btn span i{
+    color: #C06734;
+}
+.login-btn .logIn:hover{
+    background-color: #C06734;
+    
+}
+.login-btn .logIn:hover a{
+    color: white;
+}
+
+.login-btn .regis:hover a{
+    color: #C06734;
+}
+.login-btn .regis:hover {
+    background-color: white;
+    border:1px solid #C06734;
+}
+
+/* nests-info */
+.nests-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nests-info button{
+    border: 1px solid #C06734;
+    padding: 6px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+  cursor: pointer;
+    color: #C06734;
+}
+.nests-info button i{
+    margin-right: 10px;
+}
+
+.icons span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #C06734;
+   /* padding: 8px; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+.img-box,.content-info{
+    margin: 40px 0;
+}
+.icons span{
+    margin-left: 4px;
+}
+.icons span i{
+    color: #C06734;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.content-info h6{
+font-size: 32px;
+font-weight: 400;
+margin-bottom: 14px;
+}
+.mekan{
+    margin-bottom: 20px;
+}
+.mekan span{
+border: 1px solid  #C06734;
+padding: 6px 30px;
+border-radius: 20px;
+color: #C06734;
+font-weight: 600;
+}
+.mekan span i{
+    margin-right: 10px;
+}
+.content-info p{
+ margin-bottom: 20px;
+}
+.content-info ul {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.content-info ul li a i{
+    margin-right: 10px;
+    color: #C06734;
+}
+.content-info  ul li a{
+    color: #C06734;
+}
+.contact-box{
+    border: 1px solid #C06734;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contact-box a{
+    color: #C06734;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.reserv-btn .reserv{
+    background-color: #C06734;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.reserv-btn .one{
+    background-color: #C06734;
+    border: none;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 20px;
+}
+.reserv-btn .three,.azn,.sixth{
+    background-color: white;
+    border: 1px solid  #C06734;
+    color: #C06734;
+    padding: 10px 14px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.about-cards{
+    margin: 40px 0;
+}
+p.differ{
+    width: 100%;
+    color: #C06734;
+    font-size: 24px;
+
+}
+.nest-box img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.nest-box{
+    position: relative;
+    cursor: pointer;
+  
+    padding: 20px;
+    text-align: center;
+    /* margin: -20px; */
+    /* gap: 10px; */
+}
+.nest-box span i{
+position: absolute;
+right: 60px;
+font-size: 18px;
+top: 10px;
+display: block;
+}
+
+.nest-box p{
+    font-size: 22px;
+   margin-top: 14px;
+}
+footer{
+    border-top: 1px solid #C06734;
+    padding-top: 40px;
+}
+.foot-list li,.logo-foot img,.btn-group button{
+    padding: 14px 0;
+}
+.btn-group button{
+    background-color: #C06734;
+    margin: 0 10px; 
+    padding:10px 20px;
+    border-radius: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    transition: all .5s;
+}
+.btn-group button a{
+    color: white;
+}
+.btn-group,.lovely{
+justify-content: end;
+display: flex;
+}
+.lovely p a{
+    margin: 20px 120px 0 0;
+    color: #C06734;
+    display: inline-block;
+}
+.foot-end{
+    margin: 40px 0;
+}
+.foot-end ul{
+display: flex;
+gap: 30px;
+
+justify-content: end;
+}
+.foot-end ul li a i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.foot-end p{
+    font-size: 18px;
+}
+.foot-end ul li.fb i{
+    color: blue;
+    border: 1px solid blue;
+}
+.foot-end ul li.ins i{
+    color: rgb(255, 81, 0);
+    border: 1px solid  rgb(255, 81, 0);
+}
+.foot-end ul li.twit i{
+    color: rgb(80, 249, 255);
+    border: 1px solid rgb(80, 249, 255);
+}
+.foot-end ul li.youtube i{
+    color: red;
+    border: 1px solid red;
+}
