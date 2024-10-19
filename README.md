@@ -11,6 +11,14 @@
 <h2>About</h2>
 <p>Pawly is a startup project that originated from a need for a user-friendly system to support animal welfare. The project was initially designed using Figma to ensure a seamless and intuitive user experience. It integrates a full-stack approach with a Spring Boot backend and a dynamic, responsive frontend.</p>
 
+<h2>Website Preview</h2>
+<p>Check out our live website:</p>
+<p align="center">
+    <a href="https://pawly.netlify.app/" target="_blank">
+        <img src="path/to/preview-image.png" alt="Pawly Website Preview" width="80%" />
+    </a>
+</p>
+
 <h2>Features</h2>
 <ul>
     <li><strong>Pet Adoption & Surrender:</strong> Users can browse pets available for adoption or surrender their own pets, with filtering options based on species, breed, and location.</li>
